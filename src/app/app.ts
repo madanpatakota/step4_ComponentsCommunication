@@ -1,7 +1,8 @@
 import { Component , signal , computed  , effect} from '@angular/core';
+import { InputParent } from "./input-parent/input-parent";
 
 @Component({
-  imports: [],
+  imports: [InputParent],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
