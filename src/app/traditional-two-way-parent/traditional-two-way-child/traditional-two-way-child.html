@@ -1,0 +1,28 @@
+<div class="card border-success">
+  <div class="card-header bg-success text-white">
+    Child Component
+  </div>
+
+  <div class="card-body">
+    <p>
+      <strong>Child Quantity:</strong>
+      {{childQuantity()}}
+    </p>
+
+    <button
+      class="btn btn-success me-2"
+
+       (click) =  increaseQuantity()
+
+      >
+      Increase +1
+    </button>
+
+    <button
+      class="btn btn-danger"
+      (click)="decreaseQuantity()"
+      >
+      Decrease -1
+    </button>
+  </div>
+</div>
